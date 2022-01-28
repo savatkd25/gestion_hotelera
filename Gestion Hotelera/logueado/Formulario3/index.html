@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https:fonts.googleapis.com/css2?family=Chilanka&family=Sansita+Swashed&display=swap">
+    <link rel="shortcut icon" href="../Habitaciones/Imgenes/palma.png">
+    <title>Haga su Reserva</title>
+
+        <!--script de nesesario para la validacion de la fecha-->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    
+        <!--funcion de la validacion de la fecha-->
+        <script>
+        $(function() {
+        $('input[name="fecha"]').daterangepicker({
+            opens: 'left'
+        }, function(start, end, label) {
+            console.log("El nuevo formato de fecha: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+        });
+        });
+        </script>
+    
+</head>
+<body>
+    <div class="header">
+        <h1>Hotel Buena Aventura</h1>
+        <div class="navegador">
+            <ul>
+                <li><a href="../Inicio/index.html">Inicio</a></li>
+                <li><a href="../Habitaciones/Index.html">Habitaciones</a></li>
+                <li><a href="../Formulario3/index.html">Reservar</a></li>
+                <li><a href="../../Inicio/index.html">Cerrar Sesión</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <form name="formulario" action="../Habitaciones/Index.html" onsubmit="return validateForm()" method="get">
+
+        <h2>Reservar Habitación</h2>
+        <div class="contenedor">
+
+            <div class="item">
+                <label class="fechas" for="fecha"><strong>Fecha de llegada-Salida:</strong></label><br>
+                <input type="text" name="fecha" autofocus required/>
+            </div>
+
+            <div class="item">
+                <label class="adultos" for="adultos"><strong>Adultos</strong></label><br>
+                <select id="adultos" name="adultos">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                </select><br>
+            </div>
+
+            <div class="item">
+                <label class="ninos" for="ninos"><strong>Niños</strong></label><br>
+                <select id="ninos" name="ninos" value="0">
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                </select><br>
+            </div>
+
+            <div class="room">
+                <label for="habitaciones"><strong>Habitaciones:</strong></label><br>
+                <input type="number" id="habitacion" name="habitacion" min="1" max="5" value="1"><br>
+            </div>
+
+            <input type="submit" value="Verificar Disponibilidad">
+
+            <p><a href="">Necesita ayuda? </a></p>
+            
+        </div>
+    </form>
+
+   <!--Pie de pagina-->
+   <div class="footer">
+    <div class="break">
+        <div class="direccion">
+            <h4>Dirección:</h4>
+            <p>Av. Circunvalacion, Manta</p>
+        </div>
+        <div class="contacto">
+            <h4>Contactos:</h4>
+            <p>Tel: +593 998544663</p>
+            <p>Email: info@buenaaventura.ec</p>
+        </div>
+        <div class="sobre">
+            <h4>Sobre nosotros:</h4>
+            <p>Somos un hotel de calidad y profesionalismo. Contamos con habitaciones equipadas para ofrecer confort.</p>
+        </div>
+    </div>
+    <div class="derechos">
+        <h4> Hotel Buena Aventura | Todo los derechos reservados ©</h4>
+    </div>
+</div>
+</body>
+</html>

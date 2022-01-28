@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https:fonts.googleapis.com/css2?family=Chilanka&family=Sansita+Swashed&display=swap">
+    <link rel="shortcut icon" href="../Habitaciones/Imgenes/palma.png">
+    <title>Registro</title>
+
+
+    <!--  Script de la validacion--> 
+    <script type="text/javascript"> 
+
+            function validar() { 
+                nombre = document.getElementById("nombre").value;
+                apellido = document.getElementById("apellido").value;  
+                telefono = document.getElementById("telefono").value;
+                pass1 = document.getElementById('pass1');
+                pass2 = document.getElementById('pass2');
+
+                if (nombre == null || nombre.length == 0 || /^\s+$/.test(nombre)){ 
+                    alert("El campo de nombres no puede estar vacío o valor no valido"); 
+                    return false; 
+                }
+
+
+                else if (apellido == null || apellido.length == 0 || /^\s+$/.test(apellido)){ 
+                    alert("El campo apellidos no puede estar vacío o valor no valido"); 
+                    return false; 
+                }
+
+                else if( isNaN(telefono) || telefono.length == 0 ) {  
+                    alert("El telefono tiene que ser numérico o esta vacio"); 
+                    return false; 
+                }
+
+                else if (pass1.value != pass2.value) {
+                    alert("Las contraseñas no coinciden"); 
+                    return false;
+                 }
+
+                return true;
+            } 
+    </script>
+
+</head>
+
+<body>
+    <div class="header">
+        <h1>Hotel Buena Aventura<h1>
+        <div class="navegador">
+            <ul>
+                <li><a href="../Inicio/index.html">Inicio</a></li>
+                <li><a href="../Habitaciones/Index.html">Habitaciones</a></li>
+                <li><a href="../Formulario3/index.html">Reservar</a></li>
+                <li><a href="../Formulario2/index.html">Iniciar Sesión</a></li>
+                <li><a href="../Formulario4/index.html">Registrarse</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <form class="form-register" action= "../logueado/Inicio/index.html" method= "get" name= "validación" onsubmit= "return validar()">
+        <h4><center>Registrarse</center></h4>
+        <input class="controls"
+        type="text"
+        name="Nombres"
+        id="nombre"
+        placeholder="Ingrese sus nombres">
+
+        <input class="controls"
+        type="text"
+        name="Apellido"
+        id="apellido"
+        placeholder="Ingrese sus Apellidos">
+
+        <input class="controls"
+        type="telefono"
+        name="telefono"
+        id="telefono"
+        placeholder="Ingrese su telefono personal " maxlength="10">
+
+        <input class="controls"
+        type="email"
+        name="correo"
+        id="correo"
+        placeholder="Ingrese su correo" autofocus required>
+
+        <input class="controls"
+        type="password"
+        name="contra"
+        id="pass1"
+        placeholder="ingrese su contraseña">
+
+
+        <input class="controls"
+        type="password"
+        name="contra"
+        id="pass2"
+        placeholder="Vuelva ingresar la contraseña">
+
+        <input type="submit" value="Enviar"> 
+
+    </form>
+    <br>
+    <br>
+    <center>
+    <img src="imagenes/Imagen1.jpg" title="Comodas habitaciones " width ="200px" height="150px">
+    <img src="imagenes/Imagen2.jpeg"title="Ideal para descansar" width="200px" height="150px">
+    <img src="imagenes/imagen3.jpg" title="Lo mejor en centro de diversion" width="200px" height="150px">
+    <img src="imagenes/imagen4.jpg" title=" Para todas las edades" width="200px" height="150px">
+    <img src="imagenes/Imagen5.jpg"title="buffet de lujo" width="200px" height="150px">
+</center>
+  
+        </div>
+    </div>
+
+        <!--Pie de pagina-->
+    <div class="footer">
+        <div class="break">
+            <div class="direccion">
+                <h4>Dirección:</h4>
+                <p>Av. Circunvalacion, Manta</p>
+            </div>
+            <div class="contacto">
+                <h4>Contactos:</h4>
+                <p>Tel: +593 998544663</p>
+                <p>Email: info@buenaaventura.ec</p>
+            </div>
+            <div class="sobre">
+                <h4>Sobre nosotros:</h4>
+                <p>Somos un hotel de calidad y profesionalismo. Contamos con habitaciones equipadas para ofrecer confort.</p>
+            </div>
+        </div>
+        <div class="derechos">
+            <h4> Hotel Buena Aventura | Todo los derechos reservados ©</h4>
+        </div>
+    </div>
+</body>
+</html>

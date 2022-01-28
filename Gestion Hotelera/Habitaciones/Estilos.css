@@ -1,0 +1,219 @@
+*{
+    box-sizing: border-box;
+}
+@import url("fonts.googleapis.com/css2?family=Chilanka&family=Sansita+Swashed&display=swap");
+.header{
+    font-family: 'Sansita Swashed', cursive;
+    margin: 0;
+    padding: 0px;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(20, 17, 13, 0.329);
+}
+.navegador ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+.navegador ul li{
+    list-style: none;
+    margin-left: 20px;
+    padding: 10px;
+}
+.navegador ul li a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.navegador ul li a:hover{
+    background-color: rgb(146, 165, 148);
+    padding: 10px;
+}
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /*background: radial-gradient( farthest-corner circle at left bottom,  green, rgb(176, 202, 176) );
+    color: green;*/
+    background-image: url(/Imgenes/nieve.png);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    margin: auto;
+    background-color: azure;
+}
+
+.contenedor{
+    width: 100%;
+    padding: 50px 10%;
+}
+
+.titulo{
+    text-align: center;
+    padding-top: 45px;
+    color:black;
+    font-size: 3em;
+    letter-spacing: 8px;
+}
+
+
+/*DESCRIPCION*/
+.detalle{
+    color: black;
+    margin-left: 350px;
+    height: 0px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.catalogo{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    overflow: hidden;
+    padding-top: 10px;
+    padding-bottom: 10px;  
+  
+}
+.det_catalogo{
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: auto;
+    margin: 40px 10px;
+}
+.det_catalogo:hover{
+    border-radius: 10px;
+    background-color: green;
+    transition: background-color 0.3s linear 0.1s;
+}
+.cat_img{
+    width: 300px;
+    height: 300px;
+    margin: 5px 15px;
+    border-radius: 15px;
+}
+.t_categoria {
+    margin: 15px 0px;
+    letter-spacing: 1px;
+    text-align: center;
+    font-size: 1.8em;
+    color: black;
+}
+.explorar_cat {
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 10px;
+    margin: 5px 18% 15px 18%;
+    margin-top: -70px;
+    background: white;
+    border-radius: 20px;
+    border: 3px solid rgb(46, 118, 226);
+    width: 200px;
+    margin-top: -49px;
+    margin-left: 750px;
+    cursor: pointer;
+}
+
+.explorar_cat a{
+    text-decoration: none;
+    color: rgb(23, 22, 78);
+    letter-spacing: 1px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.mdetalle{
+    text-decoration: none;
+    margin-left: 350px;
+    margin-top: -20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: white;
+}
+
+.mdetalle button{
+    font-size: 17px;
+    color: rgb(23, 22, 78);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.dt{
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 10px;
+    background: white;
+    border-radius: 20px;
+    border: 3px solid rgb(46, 118, 226);
+    width: 200px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    cursor: pointer;
+}
+
+.dtc{
+    text-align: center;
+    text-decoration: none;
+    padding: 5px 5px;
+    background: white;
+    border-radius: 20px;
+    border: 3px solid rgb(46, 118, 226);
+    width: 100px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    cursor: pointer;
+}
+
+#img {
+    display: none;
+}
+
+#img a{
+    color: red;
+}
+
+#img2 {
+    display: none;
+}
+
+#img2 a{
+    color: red;
+}
+
+#img3 {
+    display: none;
+}
+
+#img3 a{
+    color: red;
+}
+
+#img4 {
+    display: none;
+}
+
+#img4 a{
+    color: red;
+}
+
+.footer{
+    background-color:black;
+    padding-top: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 0%;
+}
+.break{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 80px;
+    text-align: center;
+    color: white;
+}
+@media(max-width : 600px){
+    .break{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        text-align: center;
+    }
+}
+.derechos{
+    background-color: black;
+    text-align: center;
+    padding: 1px 0px;
+    color: white;
+}
+

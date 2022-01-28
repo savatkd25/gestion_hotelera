@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="shortcut icon" href="/Imagenes/palma.png">
+    <title>FORMULARIO REGISTRO</title>
+</head>
+
+<body>
+    <div class="container">
+        <form action="" class="form" id="form" autocomplete="off">
+            <p class="form-titulo">Formulario de Hospedaje</p>
+            <div class="form-input cedula">
+                <input type="text" id="cedula" required>
+                <label for="cedula">Ingrese su DNI</label>
+                <p class="mensajeError" ></p>
+            </div>
+            <div class="form-input nombres ">
+                <input type="text" id="nombres" required>
+                <label for="nombres">Ingrese sus Nombres</label>
+                <p class="mensajeError"></p>
+            </div>
+            <div class="form-input apellidos">
+                <input type="text" id="apellidos" required>
+                <label for="apellidos">Ingrese sus Apellidos</label>
+                <p class="mensajeError"></p>
+            </div>
+            <div class="form-input telefono">
+                <input type="text" id="telefono" required>
+                <label for="telefono">Ingrese número Celualr</label>
+                <p class="mensajeError"></p>
+            </div>
+            <div class="form-input fecha">
+                <input type="text" id="fecha" required>
+                <label for="fecha">Ingrese su Correo</label>
+                <p class="mensajeError"></p>
+            </div>
+            <div class="form-input email">
+                <input type="number" id="email" required>
+                <label for="email">Ingrese la Cantidad de Habitaciones</label>
+                <p class="mensajeError"></p>
+            </div>
+            <div class="form-input password">
+                <input type="number" id="password" required>
+                <label for="password">Ingrese los días que se Hospedará</label>
+                <p class="mensajeError"></p>
+            </div>
+            <div clas="form-condiciones condiciones">
+                <input type="checkbox" id="condiciones">
+                <label for="condiciones">He leido y acepto los</label>
+                <a href="#">Terminos y Condiciones</a>
+                <p class="mensajeError"></p>
+            </div>
+            <div class="form-boton">
+                <input type="submit" value="Enviar">
+            </div>
+            <p class="mensajeCorrecto"></p>
+
+        </form>
+    </div>
+</body>
+</html>

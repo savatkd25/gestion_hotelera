@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  <!-- cabeza - contiene los metadatos-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles de Pago</title>    
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https:fonts.googleapis.com/css2?family=Chilanka&family=Sansita+Swashed&display=swap">
+    <link rel="shortcut icon" href="../Imgenes/palma.png">
+    <link rel="stylesheet" href="estilo/estilo.css">
+</head>
+
+<body>
+
+    <div class="menu">
+        <h1>Hotel Buena Aventura</h1>
+        <div class="navegador">
+            <ul>
+                <li><a href="../../Inicio/index.html">Inicio</a></li>
+                <li><a href="../../Habitaciones/Index.html">Habitaciones</a></li>
+                <li><a href="../../Formulario3/index.html">Reservar</a></li>
+                <li><a href="../../../Inicio/index.html">Cerrar Sesión</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container">
+    
+        <div class="header">
+            <h2><img src="img/iconoseguro.PNG" width="30" height="30"/> Detalles de Pago</h2>
+            <p> Tu Reservacion se hace a travez de un metodo seguro</p>
+        </div>
+
+        <section class="cuerpo">
+            <div class="centro">
+                <p>¡Rápido! Esa es la habitacion más barata que ofrecemos en Hotel ULEAM. Reserva ahora.</p>
+            </div>
+            <p><img src="img/vistobueno.PNG" width="15" height="15"/><strong> No</strong> cobramos cargos adicionales por pagos con tarjeta de credito</p>
+            </br>
+            
+        </section>
+        <div class="contenedor">
+            <div class="campo">
+                <p  class="asterisco"style="color: red;">*</p>
+                </div>
+            <p class="asterisco">Campos Obligatorios</p>
+        </div>
+        <form action="" class="reserva" id="reserva" onsubmit="return validar()">
+        <section class="grid1">  
+            <div class="input">    
+                <strong>Nombre:</strong></br>
+                <input type="text" name="nombreusuario" id="nombre" /></br></br>      
+                <strong>Apellido:</strong></br>
+                <input type="text" name="nombreusuario" id="apellido" /></br></br>
+                <strong>Número de Tarjeta:</strong></br>
+                <input type="text" name="nombreusuario" id="ntarjeta" /></br></br>
+                <strong>Fecha de Vencimiento:</strong></br>
+                <input type="text" style="width : 30px;" id="fecha" value="MM" onfocus="this.value='';" onblur="if(this.value=='') {this.value='MM';}"/><strong>/</strong>
+                <input type="text" style="width : 30px;" name="nombreusuario" id="fecha2" value="AA" onfocus="this.value='';" onblur="if(this.value=='') {this.value='AA';}"/></br></br>
+                <strong>Codigo de Seguridad:</strong></br>
+                <input type="text" style="width : 30px;" name="codigo" id="codigo" value="***" onfocus="this.value='';" onblur="if(this.value=='') {this.value='000';}"/>                    
+                </br></br> 
+                <input type="submit" value="Reservar">
+            </div>
+            
+            <div class="aparte">
+                <p><strong>Aceptamos todas las siguientes formas de pago</strong></p>
+                <img src="img/tarjetas.PNG" width="200" height="50"/>
+    
+                <div class="recomendacion">
+                    <p><img src="img/vistobueno2.PNG" width="10" height="10"/>Usamos transmisiones seguras</p>
+                    <p><img src="img/vistobueno2.PNG" width="10" height="10"/>Protegemos tu Informacion personal</p>
+                </div>
+                </div>
+            </form>
+    
+        </section>
+            
+    
+    </div>
+    <script src="scipt.js" type="text/javascript"></script>
+
+       <!--Pie de pagina-->
+    <div class="footer">
+        <div class="break">
+            <div class="direccion">
+                <h4>Dirección:</h4>
+                <p>Av. Circunvalacion, Manta</p>
+            </div>
+            <div class="contacto">
+                <h4>Contactos:</h4>
+                <p>Tel: +593 998544663</p>
+                <p>Email: info@buenaaventura.ec</p>
+            </div>
+            <div class="sobre">
+                <h4>Sobre nosotros:</h4>
+                <p>Somos un hotel de calidad y profesionalismo. Contamos con habitaciones equipadas para ofrecer confort.</p>
+            </div>
+        </div>
+        <div class="derechos">
+            <h4> Hotel Buena Aventura | Todo los derechos reservados ©</h4>
+        </div>
+    </div>
+    </body>
+</html>

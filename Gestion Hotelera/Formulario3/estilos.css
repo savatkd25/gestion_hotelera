@@ -1,0 +1,157 @@
+@import url("fonts.googleapis.com/css2?family=Chilanka&family=Sansita+Swashed&display=swap");
+
+body{
+    background: url("https://www.oroverdemanta.com/wp-content/uploads/2021/06/oro-verde-hotel-manta-amenities-main.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: auto;
+    padding: 0;
+    margin: 0;
+}
+
+.header{
+    font-family: 'Sansita Swashed', cursive;
+    margin: 0;
+    padding: 0px;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(20, 17, 13, 0.329);
+}
+.navegador ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+.navegador ul li{
+    list-style: none;
+    margin-left: 20px;
+    padding: 10px;
+}
+.navegador ul li a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.navegador ul li a:hover{
+    background-color: rgb(146, 165, 148);
+    padding: 10px;
+}
+
+form{
+    margin:auto;
+    margin-top: 100px;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 25px;
+    width: 600px;
+	align-items: center;
+}
+h2{
+	background-color: wheat;
+	text-align: center;
+	padding: 30px;
+	border-top-left-radius: 25px;
+	border-top-right-radius: 25px;
+}
+label{
+	padding-top: 50px;
+    text-align: center;
+}
+.ninos{
+    padding-left: 100px;
+}
+.adultos{
+    padding: 80px;
+}
+.fechas{
+    padding-left: 20px;
+}
+.contenedor{
+	padding: 50px;
+	padding-right: 10px;
+}
+.item{
+	float: left;
+	width: 49%;
+}
+
+input[type=text], select {
+    width: 90%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+	align-items: center;
+}
+.room{
+	margin-left: 37%;
+}
+
+input[type=date] {
+    width: 90%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=number] {
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 93%;
+    background-color: wheat;
+    color: black;
+	font-size: 100%;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=submit]:hover {
+    width: 93%;
+    background-color: green;
+    color: black;
+	font-size: 100%;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.footer{
+    background-color:black;
+    padding-top: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 3%;
+}
+.break{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 80px;
+    text-align: center;
+    color: white;
+}
+@media(max-width : 600px){
+    .break{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        text-align: center;
+    }
+}
+.derechos{
+    background-color: black;
+    text-align: center;
+    padding: 1px 0px;
+    color: white;
+}

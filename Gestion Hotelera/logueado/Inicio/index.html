@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOTEL BUENA AVENTURA</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="icons.css">
+    <link rel="stylesheet" href="https:fonts.googleapis.com/css2?family=Chilanka&family=Sansita+Swashed&display=swap">
+    <script src="https://kit.fontawesome.com/91d71729cc.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="../Habitaciones/Imgenes/palma.png">
+
+    <!--script de nesesario para la validacion de la fecha-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+
+    <!--funcion de la validacion de la fecha-->
+    <script>
+    $(function() {
+    $('input[name="fecha"]').daterangepicker({
+        opens: 'left'
+    }, function(start, end, label) {
+        console.log("Nuevo Formato de fecha: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+    });
+    });
+    </script>
+</head>
+<body>
+    <!--menu-->
+    <div class="menu">
+        <div class="header">
+            <h1>Hotel Buena Aventura</h1>
+            <div class="navegador">
+                <ul>
+                    <li><a href="../Inicio/index.html">Inicio</a></li>
+                    <li><a href="../Habitaciones/Index.html">Habitaciones</a></li>
+                    <li><a href="../Formulario3/index.html">Reservar</a></li>
+                    <li><a href="../../Inicio/index.html">Cerrar sesión</a></li>
+                </ul>
+            </div>
+        </div>
+        <h2>El hotel de tus sueños</h2>
+        <!--Formulario para verificar habitaciones-->
+        <div class="contenedor-form">
+            <form name="formulario" action="../Habitaciones/Index.html" onsubmit="return validateForm()" method="get">
+                <div class="contenedor">
+        
+                    <div class="item">
+                        <label for="fecha"><strong>Fecha de llegada-Salida:</strong></label><br>
+                        <input type="text" name="fecha" autofocus required/>
+                    </div>
+        
+        
+                    <div class="item">
+                        <label for="adultos"><strong>Adultos</strong></label><br>
+                        <select id="adultos" name="adultos">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        </select><br>
+                    </div>
+        
+                    <div class="item">
+                        <label for="ninos"><strong>Niños</strong></label><br>
+                        <select id="ninos" name="ninos" value="0">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        </select><br>
+                    </div>
+
+                    <div class="item">
+                        <label for=submit><strong></strong></label><br>
+                        <input type="submit" value="Verificar Disponibilidad">
+                    </div>
+
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!--Seccion de servicios-->
+    <div class="servicios">
+        <h2>Servicios</h2>
+        <div class="menu-servicios">
+            <div class="bloques-servicios">
+                <i class="fas fa-wifi"></i>
+                <h4>WIFI GRATIS</h4>
+                <hr>
+                <p>Conectate en todo momento</p>
+            </div>
+
+            <div class="bloques-servicios">
+                <i class="fas fa-concierge-bell"></i>
+                <h4>SERVICIO AL CUARTO</h4>
+                <hr>
+                <p>No necesitas salir de tu cuarto</p>
+            </div>
+
+            <div class="bloques-servicios">
+                <i class="fas fa-swimming-pool"></i>
+                <h4>PISCINA</h4>
+                <hr>
+                <p>Disfruta nadando bajo el sol</p>
+            </div>
+
+            <div class="bloques-servicios">
+                <i class="fas fa-parking"></i>
+                <h4>ESTACIONAMIENTO</h4>
+                <hr>
+                <p>Amplio para todo tipo de vehiculos</p>
+            </div>
+
+            <div class="bloques-servicios">
+                <i class="fas fa-utensils"></i>
+                <h4>RESTAURANTE</h4>
+                <hr>
+                <p>Platos tipicos del País</p>
+            </div>
+
+            <!--Galeria-->
+        </div>
+        <div class="galeria"> 
+            <h2>Galería</h2>
+            <div class="imagenes">
+                <img src="images/foto1.jpg" alt="Habitación">
+                <img src="images/foto2.jpg" alt="Habitación">
+                <img src="images/foto3.jpg" alt="Piscina">
+                <img src="images/foto4.jpg" alt="piscina">
+                <img src="images/foto5.jpg" alt="Habitación">
+                <img src="images/foto6.jpg" alt="Hotel">
+            </div>
+        </div>
+    </div>
+
+    <!--formulario para eviar mensaje-->
+    <div class="escribenos">
+        <form class="contactos" action="" method="">
+            <h2> Escríbenos</h2>
+            Tu nombre:<input type="text" name="nombre" autofocus required><br/>
+            Tu correo: <input type="email" name="correo"autofocus required><br/>
+            Asunto:<input type="text" name="asunto"autofocus required><br/>
+            Mensaje:<br><textarea name="mensaje" autofocus required></textarea><p>
+            <input type="submit" value="Enviar"><br/>
+        </form>
+    </div>
+
+    <!--Pie de pagina-->
+    <div class="footer">
+        <div class="break">
+            <div class="direccion">
+                <h4>Dirección:</h4>
+                <p>Av. Circunvalacion, Manta</p>
+            </div>
+            <div class="contacto">
+                <h4>Contactos:</h4>
+                <p>Tel: +593 998544663</p>
+                <p>Email: info@buenaaventura.ec</p>
+            </div>
+            <div class="sobre">
+                <h4>Sobre nosotros:</h4>
+                <p>Somos un hotel de calidad y profesionalismo. Contamos con habitaciones equipadas para ofrecer confort.</p>
+            </div>
+        </div>
+        <div class="derechos">
+            <h4> Hotel Buena Aventura | Todo los derechos reservados ©</h4>
+        </div>
+    </div>
+</body>
+</html>
